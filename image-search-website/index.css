@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Mulish:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,800;1,100;1,200;1,300;1,500;1,700&family=Vina+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+body{
+    background-color: rgb(56, 22, 87);
+    color: aliceblue;
+}
+.heading h1{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 30px 0;
+}
+ .searchbar{
+    display: flex;
+    justify-content: center;
+}
+.conatiner .inputtext{
+        height: 38px;
+        width: 36%;
+        padding: 15px 30px;
+        font-size: 21px;
+        border-radius: 10px;
+        border: none;
+}
+.conatiner .inputtext:hover{
+    background-color: rgb(179, 179, 147);
+    color: rgb(0, 0, 0);
+}
+.conatiner .btn{
+    width: 95px;
+    height: 37px;
+    margin-left: 20px;
+    border-radius: 7px;
+    background-color: rgb(18, 141, 207);
+    border: none;
+  font-size: 1.3rem;
+}
+ .conatiner .btn:hover{
+ background-color:rgb(141, 185, 209); 
+ }
+
+
+ .imgCard{
+    background-color: aliceblue;
+    width: 366px;
+    min-height: 279px;
+ border-radius:8px ;
+ transition: 0.2s case-in-out;
+ cursor: pointer;
+ }
+ .imgCard:hover{
+background-color: rgb(205, 225, 243);
+box-shadow: 0 0 10px rgb(138, 188, 232);;
+ }
+ .imgCard .imge{
+    width: 344px;
+height: 200px;
+overflow: hidden;
+object-fit: cover;
+margin: 10px;
+border-radius: 8px;
+ }
+
+.DynamicContainer{
+   margin: 50px;
+   display: flex;
+   align-items: center;
+   /* justify-content: space-between; */
+   flex-wrap: wrap;
+   gap: 50px;
+}
+ main{
+    display: flex;
+    justify-content: space-between;
+   flex-wrap: wrap;
+ }
+ .showmore{
+    display: flex;
+    justify-content: center;
+ }
+ .showmore .showbtn{
+    width: 147px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 7px;
+    background-color: rgb(18, 141, 207);
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-top: 10px;
+ }
+ .showmore .showbtn:hover{
+    background-color:rgb(141, 185, 209);
+ }
+ .imgCard a{
+    text-decoration: none;
+    color: rgb(30, 27, 27);
+    font-size: 18px;
+    padding-left: 20px;
+    text-transform: capitalize;
+ }
