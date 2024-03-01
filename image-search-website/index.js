@@ -30,7 +30,9 @@ var pageNo = 1;
     <div class="mainContainer">
     <div class="imgCard">
         <img src=${image.urls.small} alt=${image.alt_description} class="imge">
+        <div style="color:red;">
         <a href=${image.links.html} target="_blank">${image.alt_description}</a>
+        </div>
     </div>
 </div>
     `

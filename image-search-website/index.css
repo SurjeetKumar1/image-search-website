@@ -8,36 +8,50 @@
 
 }
 body{
-    background-color: rgb(56, 22, 87);
+    background-color: rgb(3, 12, 41);
     color: aliceblue;
 }
-.heading h1{
+.heading{
     display: flex;
-    /* justify-content: center; */
     justify-content: center;
-    font-size: 2.5rem;
-    margin: 30px 0;
+    align-items: center;
+    margin: 2rem 1rem;
 }
- .searchbar{
+ .conatiner{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .conatiner .inputtext{
-        height: 38px;
-        width: 36%;
-        padding: 15px 30px;
-        font-size: 21px;
+/* background:rebeccapurple; */
+        max-height: 38px;
+        /* width: 36%; */
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
         border-radius: 10px;
         border: none;
+        border: 1px solid rgba(0, 0, 0, 0.367);
+        outline: none;
+}
+
+@media screen and (min-height: 768px) {
+   .container .inputtext {
+      width: 100%;
+      background-color: red;
+      /* margin: 0px 1rem; */
+  } 
 }
 .conatiner .inputtext:hover{
-    background-color: rgb(179, 179, 147);
+    /* background-color: rgb(179, 179, 147); */
     color: rgb(0, 0, 0);
+    /* border: 1px solid rgb(255, 136, 0); */
+    border: navy;
 }
 .conatiner .btn{
-    width: 95px;
+    max-width: 95px;
     height: 37px;
-    margin-left: 20px;
+    margin-left: 1.1rem;
     border-radius: 7px;
     background-color: rgb(18, 141, 207);
     border: none;
@@ -50,7 +64,7 @@ body{
 
  .imgCard{
     background-color: aliceblue;
-    width: 366px;
+    max-width: 366px;
     min-height: 279px;
  border-radius:8px ;
  transition: 0.2s case-in-out;
@@ -79,12 +93,13 @@ border-radius: 8px;
 }
  main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
    flex-wrap: wrap;
  }
  .showmore{
     display: flex;
     justify-content: center;
+    margin-bottom: 5rem;
  }
  .showmore .showbtn{
     width: 147px;
@@ -96,6 +111,7 @@ border-radius: 8px;
     font-size: 1.2rem;
     padding: 5px;
     margin-top: 10px;
+    font-weight: 500;
  }
  .showmore .showbtn:hover{
     background-color:rgb(141, 185, 209);
