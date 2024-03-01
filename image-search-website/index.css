@@ -12,20 +12,15 @@ body{
     color: aliceblue;
 }
 .heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin: 2rem 1rem;
 }
  .conatiner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 .conatiner .inputtext{
 /* background:rebeccapurple; */
-        max-height: 38px;
+        height: 38px;
         /* width: 36%; */
         padding: 1rem 2rem;
         font-size: 1.1rem;
@@ -35,13 +30,7 @@ body{
         outline: none;
 }
 
-@media screen and (min-height: 768px) {
-   .container .inputtext {
-      width: 100%;
-      background-color: red;
-      /* margin: 0px 1rem; */
-  } 
-}
+
 .conatiner .inputtext:hover{
     /* background-color: rgb(179, 179, 147); */
     color: rgb(0, 0, 0);
@@ -64,8 +53,8 @@ body{
 
  .imgCard{
     background-color: aliceblue;
-    max-width: 366px;
-    min-height: 279px;
+    width: 350px;
+    height: 279px;
  border-radius:8px ;
  transition: 0.2s case-in-out;
  cursor: pointer;
@@ -75,19 +64,19 @@ background-color: rgb(205, 225, 243);
 box-shadow: 0 0 10px rgb(138, 188, 232);;
  }
  .imgCard .imge{
-    width: 344px;
+    width: 350px;
 height: 200px;
 overflow: hidden;
 object-fit: cover;
-margin: 10px;
-border-radius: 8px;
+border-radius: 3px;
+
  }
 
 .DynamicContainer{
    margin: 50px;
    display: flex;
    align-items: center;
-   /* justify-content: space-between; */
+   justify-content: space-between;
    flex-wrap: wrap;
    gap: 50px;
 }
@@ -123,3 +112,10 @@ border-radius: 8px;
     padding-left: 20px;
     text-transform: capitalize;
  }
+
+ @media screen and (max-width: 767px) {
+   .conatiner .inputtext {
+       width: 20rem;
+   }
+
+}
